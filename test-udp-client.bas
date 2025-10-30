@@ -40,7 +40,7 @@
 
         if theError = 10101 or theError = 10054 then
             print "Connection closed or reset by peer."
-            goto [recvLoop]
+            goto [respLoop]
         else
             'With UDP, if a datagram comes in that is too large for the network stack
             'or the specified buffer to handle, the data will be truncated, and the extra data
